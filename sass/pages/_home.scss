@@ -1,0 +1,35 @@
+.container {
+  padding: 3rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  // border: 1px solid white;  /* TESTING PURPOSES - DELETE */
+}
+
+.section-about {
+  margin-top: 12rem;
+  display: flex;
+}
+
+.box-left,
+.box-right {
+  padding: 3rem;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+}
+
+.box-right__skill {
+  flex: 1;
+  padding: 2rem 10rem;
+  margin: 1rem;
+  background-color: #1a1a1a;
+  transition: all 0.3s;
+}
+.box-right__skill:hover {
+  background-color: #fff629;
+}

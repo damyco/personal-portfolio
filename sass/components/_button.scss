@@ -1,0 +1,43 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 2rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.8rem;
+  //change for the <button> element
+  border: none;
+  cursor: pointer;
+  background: rgba($color-grey-dark-1, 0.5);
+  margin-bottom: 3rem;
+  border: 2px solid $color-primary-2;
+}
+
+.btn--primary {
+  position: relative;
+  max-width: 20rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: $color-white;
+  transition: all .3s;
+  &:hover {
+    background: $color-primary-2;
+    color: $color-grey-dark-1;
+    & .fa-arrow-right {
+        transform: rotate(90deg);
+        margin-left: 2rem;
+        color: $color-grey-dark-1;
+    }
+  }
+}
+
+
+.fa-arrow-right {
+    margin-left: 1.5rem;
+    
+    backface-visibility: hidden; // fix animation shake
+    transition: all .3s;
+}

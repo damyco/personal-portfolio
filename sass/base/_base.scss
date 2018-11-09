@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  //   font-family: 'Archivo Black', sans-serif;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+::selection {
+  background-color: $color-primary-2;
+  color: $color-black;
+}

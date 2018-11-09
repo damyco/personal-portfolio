@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  //   border: 1px solid white; /* TESTING PURPOSES - DELETE */
+height: 55vh;
+  padding: 5rem 3rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bf453d8de413fcdece9ac11275bbc8c&auto=format&fit=crop&w=1525&q=80);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    opacity: 1;
+    z-index: -5;
+  }
+
+  &__content-box-left,
+  &__content-box-right {
+    
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    flex: 1 0 50%;
+    // border: 1px solid white; /* TESTING PURPOSES - DELETE */
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 0 1rem;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+  }
+
+  &__card {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 2rem;
+    background-color: $color-grey-dark-1;
+    transition: all 0.3s;
+    margin-top: 3px;
+    height: 25rem;
+    
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      background-color: $color-primary-2;
+      color: $color-grey-dark-1;
+      & .u-border-bottom {
+        border-bottom: 2px solid $color-grey-dark-1;
+      }
+    }
+
+    &:last-child:after {
+      content: "";
+      background-color: transparent;
+
+      border-right: 4px solid $color-primary-2;
+      border-bottom: 4px solid $color-primary-2;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      top: 53%;
+      right: -3px;
+      z-index: -3;
+      transition: all 0.2s ease;
+    }
+    &:last-child:hover::after {
+      border-right: 4px solid #fff629;
+      border-bottom: 4px solid #fff629;
+      top: 58%;
+      right: -1.1rem;
+    }
+  }
+}
