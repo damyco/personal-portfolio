@@ -8,9 +8,15 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/card";
+@import "components/form";
 
-@import "layout/navigation";
+@import "layout/about";
+@import "layout/contact";
+@import "layout/footer";
 @import "layout/header";
+@import "layout/mywork";
+@import "layout/navigation";
 
 @import "pages/home";
 
