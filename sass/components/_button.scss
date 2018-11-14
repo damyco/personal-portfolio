@@ -22,22 +22,25 @@
   margin-top: 1rem;
   margin-bottom: 2rem;
   color: $color-white;
-  transition: all .3s;
+  transition: all 0.3s;
   &:hover {
     background: $color-primary-2;
     color: $color-grey-dark-1;
     & .fa-arrow-right {
-        transform: rotate(90deg);
-        margin-left: 2rem;
-        color: $color-grey-dark-1;
+      transform: rotate(90deg);
+      margin-left: 2rem;
+      color: $color-grey-dark-1;
     }
   }
 }
 
-
 .fa-arrow-right {
-    margin-left: 1.5rem;
-    color: $color-white;
-    backface-visibility: hidden; // fix animation shake
-    transition: transform .3s, margin-left .3s, color .3s;
+  margin-left: 1.5rem;
+  color: $color-white;
+  backface-visibility: hidden; // fix animation shake
+  transition: transform 0.3s, margin-left 0.3s, color 0.3s;
+}
+
+.btn--top {
+  background-color: $color-grey-dark-1;
 }
