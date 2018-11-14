@@ -1,15 +1,14 @@
 .u-border-top {
-    border-top: 3px solid $color-primary-2;
-    padding-top: 6px;
-  }
+  border-top: 3px solid $color-primary-2;
+  padding-top: 6px;
+}
 
-  .u-border-bottom {
-      border-bottom: 2px solid $color-primary-2;
-      padding-bottom: 3px;
-      transition: border-bottom .3s;
-    }
+.u-border-bottom {
+  border-bottom: 2px solid $color-primary-2;
+  padding-bottom: 3px;
+  transition: border-bottom 0.3s;
+}
 
-
-    .u-text-yellow {
-        color: $color-primary-2;
-    }
+.u-text-yellow {
+  color: $color-primary-2;
+}

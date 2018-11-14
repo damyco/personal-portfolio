@@ -1,81 +1,8 @@
 .section-contact {
   display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 5rem;
-  background: #1a1a1a;
-  padding-bottom: 4rem;
-}
-
-.form__list {
-  list-style: none;
-  padding: 3rem;
-}
-
-.form__list li {
-  display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-}
-
-.form__list > li > label,
-.form__list li {
-  flex: 1 0 100%;
-  font-size: 1.4rem;
-}
-
-.form__list > li > label {
-  margin: 1.5rem 0 0.5rem;
-  color: #ffeb3b;
-  font-weight: 700;
-}
-
-.form__list > li > label + * {
-  font-family: inherit;
-  font-size: 1.4rem;
-  flex: 1 0 22rem;
-  background: #3a3a3a;
-  padding: 1rem 1.2rem;
-  border: none;
-}
-
-.form__list > li > input,
-.form__list > li > textarea {
-  border: 2px solid transparent;
-  color: #fff;
-  transition: border 0.3s;
-  flex: 1 0 40rem;
-}
-
-.form__list > li > input:focus,
-.form__list > li > textarea:focus {
-  border-top: 2px solid #ffeb3b;
-  outline: none;
-}
-
-.form__list li button {
-  margin: 0;
-  margin-top: 3rem;
-  margin-bottom: 0;
-  padding: 1rem 4rem;
-}
-
-#message {
-  resize: none;
-  overflow: hidden;
-  height: 18rem;
-}
-
-.fa-envelope {
-  margin-left: 1.5rem;
-}
-
-::placeholder {
-  color: rgba(201, 201, 201, 0.658) !important;
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: rgba(201, 201, 201, 0.658) !important;
+  flex-direction: column;
+  margin-top: 5rem;
+  background: $color-grey-dark-1;
+  padding: 3rem;
 }

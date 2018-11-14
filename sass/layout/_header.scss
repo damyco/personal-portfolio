@@ -21,66 +21,10 @@
     z-index: -5;
   }
 
-  &__content-box-left,
-  &__content-box-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 0 50%;
-    // border: 1px solid white; /* TESTING PURPOSES - DELETE */
-  }
+
   &__container {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
-  &__card {
-    position: relative;
-    cursor: default;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    flex: 1 0 20%;
-
-    padding: 2rem;
-    background-color: $color-grey-dark-1;
-    transition: all 0.3s;
-
-    height: 100%;
-    
-
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
-
-    &:hover {
-      background-color: $color-primary-2;
-      color: $color-grey-dark-1;
-      & .u-border-bottom {
-        border-bottom: 2px solid $color-grey-dark-1;
-      }
-    }
-
-    &:last-child:after {
-      content: "";
-      background-color: transparent;
-
-      border-right: 4px solid $color-primary-2;
-      border-bottom: 4px solid $color-primary-2;
-      height: 50%;
-      width: 50%;
-      position: absolute;
-      top: 52%;
-      right: -3px;
-      z-index: -3;
-      transition: all 0.2s ease;
-    }
-    &:last-child:hover::after {
-      border-right: 4px solid $color-primary-2;
-      border-bottom: 4px solid $color-primary-2;
-      top: 57%;
-      right: -1.1rem;
-    }
-  }
 }

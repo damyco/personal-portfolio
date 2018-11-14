@@ -1,0 +1,50 @@
+.header {
+    
+  &__card {
+    position: relative;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    flex: 1 0 15%;
+
+    padding: 2rem;
+    background-color: $color-grey-dark-1;
+    transition: all 0.3s;
+
+    
+
+    &:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    &:hover {
+      background-color: $color-primary-2;
+      color: $color-grey-dark-1;
+      & .u-border-bottom {
+        border-bottom: 2px solid $color-grey-dark-1;
+      }
+    }
+
+    &:last-child:after {
+      content: "";
+      background-color: transparent;
+
+      border-right: 4px solid $color-primary-2;
+      border-bottom: 4px solid $color-primary-2;
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      bottom: -0.4rem;
+      right: -0.4rem;
+      z-index: -3;
+      transition: all 0.2s ease;
+    }
+
+    &:last-child:hover::after {
+      bottom: -1rem;
+      right: -1rem;
+    }
+  }
+}

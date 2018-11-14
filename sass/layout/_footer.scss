@@ -10,7 +10,10 @@
   padding: 3rem;
 }
 
-.icon-box > i {
+
+.icon-box > a:link,
+.icon-box > a:visited {
+  color: inherit;
   cursor: pointer;
   font-size: 3rem;
   padding: 2.5rem;
@@ -20,50 +23,50 @@
   margin-top: 3rem;
 }
 
-.icon-box > i:first-child::after {
+.icon-box > a:first-child::after {
   content: "";
   position: absolute;
   width: 3rem;
   height: 3rem;
-  top: -0.3rem;
+  top: -0.4rem;
   left: -0.4rem;
   z-index: -10;
   background-color: transparent;
-  border-left: 3px solid #ffeb3b;
-  border-top: 3px solid #ffeb3b;
-  transition: transform 0.2s;
+  border-left: 4px solid #ffeb3b;
+  border-top: 4px solid #ffeb3b;
+  transition: all 0.2s;
 }
 
-.icon-box > i:last-child::after {
+.icon-box > a:last-child::after {
   content: "";
   position: absolute;
   width: 3rem;
   height: 3rem;
-  bottom: -0.3rem;
+  bottom: -0.4rem;
   right: -0.4rem;
   z-index: -10;
   background-color: transparent;
-  border-right: 3px solid #ffeb3b;
-  border-bottom: 3px solid #ffeb3b;
-  transition: transform 0.2s;
+  border-right: 4px solid #ffeb3b;
+  border-bottom: 4px solid #ffeb3b;
+  transition: all 0.2s;
 }
 
-.icon-box > i:not(:last-child) {
+.icon-box > a:not(:last-child) {
   margin-right: 2.5rem;
 }
 
-.icon-box > i:hover {
+.icon-box > a:hover {
   background-color: #ffeb3b;
   color: #1a1a1a;
 }
 
-.icon-box > i:last-child:hover::after {
-  /* transform: translate(15%, 15%); */
-  transform: scale(1.4);
+.icon-box > a:last-child:hover::after {
+  bottom: -1rem;
+  right: -1rem;
 }
-.icon-box > i:first-child:hover::after {
-  /* transform: translate(-15%, -15%); */
-  transform: scale(1.4);
+.icon-box > a:first-child:hover::after {
+  top: -1rem;
+  left: -1rem;
 }
 
 .fa-angle-double-up {
