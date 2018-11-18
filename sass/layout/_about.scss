@@ -1,6 +1,6 @@
 .section-about {
   margin-top: 9rem;
-  display: flex;
+  
 }
 
 .box-left,
@@ -12,6 +12,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.box-left {
+  height: 60vh;
+  width: 50%;
+  
 }
 
 .box-right__skill {

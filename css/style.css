@@ -24,6 +24,10 @@ h1 {
   font-size: 3rem;
   font-family: 'Archivo Black', sans-serif; }
 
+h2 {
+  font-size: 2rem;
+  font-family: 'Archivo Black', sans-serif; }
+
 h3 {
   font-weight: 700;
   font-size: 1.6rem;
@@ -186,8 +190,7 @@ h4 {
   color: #717171 !important; }
 
 .section-about {
-  margin-top: 9rem;
-  display: flex; }
+  margin-top: 9rem; }
 
 .box-left,
 .box-right {
@@ -196,6 +199,10 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
+
+.box-left {
+  height: 60vh;
+  width: 50%; }
 
 .box-right__skill {
   flex: 1;
@@ -249,7 +256,7 @@ h4 {
   color: inherit;
   cursor: pointer;
   font-size: 3rem;
-  padding: 2.5rem;
+  padding: 2.5rem 2.8rem;
   background-color: #1A1A1A;
   transition: all 0.3s;
   position: relative;
@@ -301,6 +308,17 @@ h4 {
 
 .copyright {
   margin-top: 2rem; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center; }
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .header {
   display: flex;
