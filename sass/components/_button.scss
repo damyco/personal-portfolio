@@ -7,20 +7,19 @@
   padding: 1rem 2rem;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.8rem;
+  font-size: 2rem;
   //change for the <button> element
   border: none;
   cursor: pointer;
   background: rgba($color-grey-dark-1, 0.5);
-  margin-bottom: 3rem;
+ 
   border: 2px solid $color-primary-2;
 }
 
 .btn--primary {
   position: relative;
-  max-width: 20rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  max-width: 30rem;
+
   color: $color-white;
   transition: all 0.3s;
   &:hover {

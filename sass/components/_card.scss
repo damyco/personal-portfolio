@@ -1,50 +1,78 @@
-.header {
-    
-  &__card {
-    position: relative;
-    cursor: default;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
 
-    flex: 1 0 15%;
+  justify-content: space-evenly;
+  margin-top: auto;
+}
 
-    padding: 2rem;
-    background-color: $color-grey-dark-1;
+.card-column {
+  max-height: 37rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+
+  background-color: $color-grey-dark-1;
+  transition: all 0.3s;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 6rem;
+  }
+
+
+  & > i {
+    font-size: 6rem;
+    color: $color-white;
     transition: all 0.3s;
-
+    padding: 3rem;
     
+  }
 
-    &:not(:last-child) {
-      margin-right: 3rem;
-    }
+  & > h3 {
+  margin-bottom: 1rem;
+    font-size: 2rem;
+    
+  }
+  & > p {
 
-    &:hover {
-      background-color: $color-primary-2;
+    font-size: 1.6rem;
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &:hover {
+    background-color: $color-primary-2;
+    color: $color-grey-dark-1;
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 3rem rgba($color-white, 0.05);
+
+
+    & i {
       color: $color-grey-dark-1;
-      & .u-border-bottom {
-        border-bottom: 2px solid $color-grey-dark-1;
-      }
-    }
-
-    &:last-child:after {
-      content: "";
-      background-color: transparent;
-
-      border-right: 4px solid $color-primary-2;
-      border-bottom: 4px solid $color-primary-2;
-      height: 5rem;
-      width: 5rem;
-      position: absolute;
-      bottom: -0.4rem;
-      right: -0.4rem;
-      z-index: -3;
-      transition: all 0.2s ease;
-    }
-
-    &:last-child:hover::after {
-      bottom: -1rem;
-      right: -1rem;
     }
   }
-}
+    // &:last-child:after {
+    //   content: "";
+    //   background-color: transparent;
+
+    //   border-right: 1rem solid $color-primary-2;
+    //   border-bottom: 1rem solid $color-primary-2;
+    //   height: 12rem;
+    //   width: 18rem;
+    //   position: absolute;
+    //   bottom: -1rem;
+    //   right: -1rem;
+    //   z-index: -3;
+    //   transition: all 0.2s ease;
+    // }
+
+    // &:last-child:hover::after {
+    //   bottom: -2rem;
+    //   right: -2rem;
+    // }
+  }
+

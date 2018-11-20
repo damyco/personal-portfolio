@@ -1,131 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Web Developer - David Makos - Personal Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-        crossorigin="anonymous">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo+Black|Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container">
+      <nav class="navbar">
+        <p class="navbar__logo">DM</p>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link navbar__link--active">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#section-about" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">My work</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-        <nav class="navbar">
-            <p class="navbar__logo">DM </p>
-            <ul class="navbar__list">
-                <li class="navbar__item"><a href="#" class="navbar__link navbar__link--active">Home</a></li>
-                <li class="navbar__item"><a href="#section-about" class="navbar__link">About</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">My work</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link">Contact</a></li>
-            </ul>
-        </nav>
+      <header class="header" id="header">
+        <div class="header__content-box">
+          <h1 class="heading-primary">
+            <span class="u-border-top">H</span>ello, I'm David Makos.
+          </h1>
+          <h1 class="heading-primary">
+            I'm a <span class="u-text-yellow">web developer.</span>
+          </h1>
+          <a href="#section-about" class="btn btn--primary u-margin-top u-margin-bottom">About me <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-        <header class="header" id="header">
+      </header>
+      <div class="cards-row">
+        <div class="card-column">
+          <i class="fas fa-cubes"></i>
+          <h3>Modern</h3>
+          <p class="u-border-top">I'm using the latest modern technologies and best practices to deliver the highest standard product.</p>
+        </div>
+        <div class="card-column">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Resposnsive</h3>
+          <p class="u-border-top">It doesn't matter what device you are on - my websites look incredbily good on every modern device, portrait and landscape.</p>
+        </div>
+        <div class="card-column">
+          <i class="fas fa-eye"></i>
+          <h3>Intuitive</h3>
+          <p class="u-border-top">I'm always designing my projects with intuitive navigation in mind, making sure it's simple and easy to navigate.</p>
+        </div>
+        <div class="card-column">
+          <i class="fas fa-angle-double-right"></i>
+          <h3> Fast</h3>
+          <p class="u-border-top">My websites are optimized for performace, reducing load time and making them fast - on every modern browser.</p>
+        </div>
+      </div>
 
-            <div class="header__content-box">
-                <h1 class="heading-primary"><span class="u-border-top">H</span>ello, I'm David Makos. </h1>
-                <h1 class="heading-primary">I'm a <span class="u-text-yellow">web developer.</span></h1>
-                <a href="#section-about" class="btn btn--primary">About me <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </header>
+      <section id="section-about" class="section-about">
+        <h2><span class="u-border-top">Who</span> am I?</h2>
+        <div class="box-left"></div>
 
-        <section id="section-about" class="section-about">
+        <h2>Some of my skills</h2>
+        <div class="box-right">
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+          <div class="box-right__skill"></div>
+        </div>
+      </section>
 
-            <h2><span class="u-border-top">Who</span> am I?</h2>
-            <div class="box-left">
-            </div>
+      <section id="section-work" class="section-work">
+        <h2><span class="u-border-top">My </span>projects</h2>
+        <!-- TODO section my work -->
+      </section>
 
-            <h2>Some of my skills</h2>
-            <div class="box-right">
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-                <div class="box-right__skill"> </div>
-            </div>
+      <section id="section-contact" class="section-contact">
+        <form
+          class="form"
+          action="https://formspree.io/you@email.com"
+          method="POST"
+        >
+          <ul class="form__list">
+            <li class="form__item"><h2>Get in touch</h2></li>
+            <li class="form__item">
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </li>
+            <li class="form__item">
+              <label for="email">Your e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="_replyto"
+                placeholder="johndoe@email.com"
+                required
+              />
+            </li>
+            <li class="form__item">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                cols="50"
+                placeholder="Type in your message..."
+                required
+                maxlength="1000"
+              ></textarea>
+            </li>
+            <li class="form__item">
+              <button class="btn btn--primary" type="submit">
+                Send <i class="fas fa-envelope"></i>
+              </button>
+            </li>
+          </ul>
+        </form>
+      </section>
 
+      <footer class="footer">
+        <a href="#header" class="btn btn--primary btn--top"
+          ><i class="fas fa-angle-double-up"></i
+        ></a>
 
-            <div class="header__container">
-                <div class="header__card">
-                    <h3><span class="u-border-bottom"> Mod</span>ern </h3>
-                    <p>I'm using the latest, modern technology in my projects. Always learning and keeping up with
-                        newest releases.</p>
-                </div>
+        <div class="icon-box">
+          <a
+            href="https://github.com/damyco"
+            class="icon-box__link"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="#" class="icon-box__link" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://codepen.io/damyco/"
+            class="icon-box__link"
+            target="_blank"
+            ><i class="fab fa-codepen"></i
+          ></a>
+        </div>
 
-                <div class="header__card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3><span class="u-border-bottom"> Res</span>posnsive</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </div>
-
-                <div class="header__card">
-                    <h3><span class="u-border-bottom"> Int</span>uitive</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </div>
-
-                <div class="header__card">
-                    <i class="far fa-tachometer-alt-fastest"></i>
-                    <h3><span class="u-border-bottom"> Fas</span>t</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section id="section-work" class="section-work">
-            <h2><span class="u-border-top">My </span>projects</h2>
-            <!-- TODO section my work-->
-        </section>
-
-        <section id="section-contact" class="section-contact">
-            <form class="form" action="https://formspree.io/you@email.com" method="POST">
-                <ul class="form__list">
-                    <li class="form__item">
-                        <h2> Get in touch </h2>
-                    </li>
-                    <li class="form__item">
-                        <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </li>
-                    <li class="form__item">
-                        <label for="email">Your e-mail</label>
-                        <input type="email" id="email" name="_replyto" placeholder="johndoe@email.com" required>
-                    </li>
-                    <li class="form__item">
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" rows="4" cols="50" placeholder="Type in your message..."
-                            required maxlength="1000"></textarea>
-                    </li>
-                    <li class="form__item">
-                        <button class="btn btn--primary" type="submit">Send <i class="fas fa-envelope"></i></button>
-                    </li>
-                </ul>
-            </form>
-        </section>
-
-        <footer class="footer">
-
-            <a href="#header" class="btn btn--primary btn--top"><i class="fas fa-angle-double-up"></i></a>
-
-            <div class="icon-box">
-
-                <a href="https://github.com/damyco" class="icon-box__link" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" class="icon-box__link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://codepen.io/damyco/" class="icon-box__link" target="_blank"><i class="fab fa-codepen"></i></a>
-            </div>
-
-            <p class="copyright">David Makos <span class="u-text-yellow">&copy; 2018</span></p>
-        </footer>
+        <p class="copyright">
+          David Makos <span class="u-text-yellow">&copy; 2018</span>
+        </p>
+      </footer>
     </div>
-</body>
-
+  </body>
 </html>

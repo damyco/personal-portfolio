@@ -1,14 +1,11 @@
 .section-about {
-  margin-top: 9rem;
-  
+  margin-top: 5rem;
 }
 
 .box-left,
 .box-right {
   padding: 3rem;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -17,11 +14,9 @@
 .box-left {
   height: 60vh;
   width: 50%;
-  
 }
 
 .box-right__skill {
-  flex: 1;
   padding: 3rem 8rem;
   margin: 2rem;
   background-color: $color-grey-dark-1;

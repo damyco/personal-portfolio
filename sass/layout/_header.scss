@@ -1,11 +1,16 @@
 .header {
   display: flex;
   flex-wrap: wrap;
+align-items: center;
   position: relative;
   //   border: 1px solid white; /* TESTING PURPOSES - DELETE */
-  height: 55vh;
-  padding: 5rem 3rem;
+  height: 82vh;
+  padding: 6rem;
+  margin-bottom: 6rem;
+&__content-box {
 
+  flex: 1 0 100%;
+}
   &::before {
     content: "";
     position: absolute;
@@ -21,8 +26,5 @@
     z-index: -5;
   }
 
-  &__container {
-    display: flex;
-    margin-top: 3rem;
-  }
+
 }
