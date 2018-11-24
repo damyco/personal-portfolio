@@ -1,34 +1,27 @@
 .section-about {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
-.box-left,
-.box-right {
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.box-left {
-  height: 60vh;
-  width: 50%;
-}
-
-.box-right__skill {
-  padding: 3rem 8rem;
-  margin: 2rem;
+.box-skill {
+  width: 100%;
+  height: 4rem;
+  margin: 0.75rem 0rem 0.75rem 0.75rem;
   background-color: $color-grey-dark-1;
   transition: all 0.3s;
-}
-.box-right__skill:hover {
-  background-color: $color-primary-2;
+
+  &:hover {
+    background-color: $color-primary-2;
+  }
 }
 
-.box-left {
+.col-12 {
+  margin-left: 0.75rem;
+}
+
+.img-box {
   position: relative;
-  flex: 1 0 40%;
+  width: 100%;
+  height: 100%;
   &::before {
     content: "";
     position: absolute;
@@ -45,4 +38,10 @@
   }
 }
 
-// img
+
+.about-text {
+  align-self: flex-start;
+  font-size: 1.4rem;
+  padding: 0 1.5rem 0 3rem;
+  text-align: justify;
+}

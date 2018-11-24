@@ -2,10 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -3rem;
-  // margin-bottom: 2.5rem; 
-  padding: 2.25rem 0 2.5rem 0;
-  border-top: 3px solid $color-primary-2;
+  padding-bottom: 3rem;
+
+  &__logo {
+    font-size: 3rem;
+    font-family: "Archivo Black", sans-serif;
+  }
 
   &__list {
     display: flex;

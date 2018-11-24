@@ -33,13 +33,8 @@ h3 {
   font-size: 2em;
   font-family: 'Archivo Black', sans-serif; }
 
-.navbar__logo {
-  font-size: 4rem;
-  font-family: 'Archivo Black', sans-serif; }
-
 .u-border-top {
-  border-top: 3px solid #FFEB3B;
-  padding-top: 6px; }
+  border-top: 3px solid #FFEB3B; }
 
 .u-border-bottom {
   border-bottom: 2px solid #FFEB3B;
@@ -54,6 +49,9 @@ h3 {
 
 .u-margin-bottom {
   margin-bottom: 3rem; }
+
+.u-margin-right {
+  margin-right: 1.5rem; }
 
 .btn {
   display: flex;
@@ -95,7 +93,7 @@ h3 {
 .cards-row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -3rem; }
+  margin: 3rem 0; }
 
 .card-column {
   max-height: 35rem;
@@ -116,15 +114,16 @@ h3 {
     transition: all 0.3s;
     padding: 0 0 3rem 0; }
     .card-column > i::before {
-      width: 12rem;
-      height: 12rem; }
+      width: 11rem;
+      height: 11rem; }
   .card-column > h3 {
     margin-bottom: 1rem;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
   .card-column > p {
-    font-size: 1.6rem;
-    text-align: justify;
-    font-family: "Roboto", sans-serif; }
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-top: 1rem; }
   .card-column:hover {
     background-color: #FFEB3B;
     color: #1A1A1A;
@@ -197,33 +196,25 @@ h3 {
   color: #717171 !important; }
 
 .section-about {
-  margin-top: 5rem; }
+  margin-top: 3rem; }
 
-.box-left,
-.box-right {
-  padding: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.box-left {
-  height: 60vh;
-  width: 50%; }
-
-.box-right__skill {
-  padding: 3rem 8rem;
-  margin: 2rem;
+.box-skill {
+  width: 100%;
+  height: 4rem;
+  margin: 0.75rem 0rem 0.75rem 0.75rem;
   background-color: #1A1A1A;
   transition: all 0.3s; }
+  .box-skill:hover {
+    background-color: #FFEB3B; }
 
-.box-right__skill:hover {
-  background-color: #FFEB3B; }
+.col-12 {
+  margin-left: 0.75rem; }
 
-.box-left {
+.img-box {
   position: relative;
-  flex: 1 0 40%; }
-  .box-left::before {
+  width: 100%;
+  height: 100%; }
+  .img-box::before {
     content: "";
     position: absolute;
     top: 0;
@@ -236,6 +227,12 @@ h3 {
     filter: grayscale(100%);
     opacity: 1;
     z-index: -5; }
+
+.about-text {
+  align-self: flex-start;
+  font-size: 1.4rem;
+  padding: 0 1.5rem 0 3rem;
+  text-align: justify; }
 
 .section-contact {
   display: flex;
@@ -315,23 +312,66 @@ h3 {
 .copyright {
   margin-top: 2rem; }
 
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 3rem; }
+
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
 
-.column {
-  flex: 1;
-  display: flex; }
+.col-1 {
+  flex-basis: 8.33333%; }
+
+.col-2 {
+  flex-basis: 16.66667%; }
+
+.col-3 {
+  flex-basis: 25%; }
+
+.col-4 {
+  flex-basis: 33.33333%; }
+
+.col-5 {
+  flex-basis: 41.66667%; }
+
+.col-6 {
+  flex-basis: 50%; }
+
+.col-7 {
+  flex-basis: 58.33333%; }
+
+.col-8 {
+  flex-basis: 66.66667%; }
+
+.col-9 {
+  flex-basis: 75%; }
+
+.col-10 {
+  flex-basis: 83.33333%; }
+
+.col-11 {
+  flex-basis: 91.66667%; }
+
+.col-12 {
+  flex-basis: 100%; }
+
+[class*="col-"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  height: 82vh;
-  padding: 6rem;
-  margin-bottom: 6rem; }
-  .header__content-box {
+  height: 80vh;
+  padding: 6rem; }
+  s
+.header__content-box {
     flex: 1 0 100%; }
   .header::before {
     content: "";
@@ -347,13 +387,17 @@ h3 {
     opacity: 1;
     z-index: -5; }
 
+.section-work {
+  margin-top: 3rem; }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -3rem;
-  padding: 2.25rem 0 2.5rem 0;
-  border-top: 3px solid #FFEB3B; }
+  padding-bottom: 3rem; }
+  .navbar__logo {
+    font-size: 3rem;
+    font-family: "Archivo Black", sans-serif; }
   .navbar__list {
     display: flex;
     list-style: none;
@@ -396,8 +440,3 @@ h3 {
       bottom: -3px;
       left: 0;
       background-color: #FFEB3B; }
-
-.container {
-  padding: 3rem;
-  max-width: 160rem;
-  margin: 0 auto; }
