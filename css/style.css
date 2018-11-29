@@ -45,7 +45,7 @@ h3 {
   color: #FFEB3B; }
 
 .u-margin-top {
-  margin-top: 3rem; }
+  margin-top: 1.5rem; }
 
 .u-margin-bottom {
   margin-bottom: 3rem; }
@@ -92,8 +92,7 @@ h3 {
 
 .cards-row {
   display: flex;
-  flex-wrap: wrap;
-  margin: 3rem 0; }
+  flex-wrap: wrap; }
 
 .card-column {
   max-height: 35rem;
@@ -105,14 +104,15 @@ h3 {
   padding: 3rem;
   background-color: #1A1A1A;
   transition: all 0.3s;
-  position: relative; }
+  position: relative;
+  box-shadow: 0 4px 6px rgba(26, 26, 26, 0.2); }
   .card-column:not(:last-child) {
     margin-right: 3rem; }
   .card-column > i {
     font-size: 6rem;
     color: #FFFFFF;
     transition: all 0.3s;
-    padding: 0 0 3rem 0; }
+    padding: 0 0 1rem 0; }
     .card-column > i::before {
       width: 11rem;
       height: 11rem; }
@@ -196,7 +196,8 @@ h3 {
   color: #717171 !important; }
 
 .section-about {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  padding: 3rem; }
 
 .box-skill {
   width: 100%;
@@ -240,7 +241,8 @@ h3 {
   flex-direction: column;
   margin-top: 5rem;
   background: #1A1A1A;
-  padding: 3rem; }
+  padding: 3rem;
+  margin: 3rem; }
 
 .footer {
   font-size: 1.4rem;
@@ -313,9 +315,8 @@ h3 {
   margin-top: 2rem; }
 
 .container {
-  max-width: 130rem;
-  margin: 0 auto;
-  padding: 3rem; }
+  max-width: 140rem;
+  margin: 0 auto; }
 
 .row {
   display: flex;
@@ -368,10 +369,9 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
-  height: 80vh;
+  height: 100%;
   padding: 6rem; }
-  s
-.header__content-box {
+  .header__content-box {
     flex: 1 0 100%; }
   .header::before {
     content: "";
@@ -383,7 +383,6 @@ h3 {
     background-image: url(https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3bf453d8de413fcdece9ac11275bbc8c&auto=format&fit=crop&w=1525&q=80);
     background-size: cover;
     background-position: center;
-    filter: grayscale(100%);
     opacity: 1;
     z-index: -5; }
 
@@ -394,7 +393,8 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 3rem; }
+  padding: 3rem;
+  margin-top: -1rem; }
   .navbar__logo {
     font-size: 3rem;
     font-family: "Archivo Black", sans-serif; }
