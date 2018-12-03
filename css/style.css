@@ -274,7 +274,8 @@ h3 {
 .img-box {
   position: relative;
   width: 100%;
-  height: 40rem; }
+  height: 40rem;
+  margin: 0 3rem; }
   .img-box::before {
     content: "";
     position: absolute;
@@ -292,9 +293,7 @@ h3 {
 .about-text {
   align-self: flex-start;
   font-size: 1.4rem;
-  padding: 0 1.5rem 0 3rem;
-  text-align: justify;
-  margin: 1rem 0; }
+  text-align: justify; }
 
 .section-contact {
   display: flex;
@@ -446,7 +445,28 @@ h3 {
     z-index: -5; }
 
 .section-work {
-  margin-top: 3rem; }
+  margin: 3rem 0; }
+
+.grid {
+  display: flex; }
+
+.responsive-image {
+  max-width: 100%; }
+
+.cell img {
+  cursor: pointer;
+  display: block;
+  filter: grayscale(90%);
+  transition: all .2s;
+  backface-visibility: hidden; }
+  .cell img:hover {
+    filter: none;
+    transform: scale(1.05); }
+
+.cell {
+  margin-bottom: 3rem; }
+  .cell:not(:last-child) {
+    margin-right: 3rem; }
 
 .navbar {
   display: flex;

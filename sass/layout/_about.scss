@@ -8,6 +8,7 @@
   position: relative;
   width: 100%;
   height: 40rem;
+  margin: 0 3rem;
   &::before {
     content: "";
     position: absolute;
@@ -27,8 +28,8 @@
 .about-text {
   align-self: flex-start;
   font-size: 1.4rem;
-  padding: 0 1.5rem 0 3rem;
+  
   text-align: justify;
-  margin: 1rem 0;
+
 }
 
