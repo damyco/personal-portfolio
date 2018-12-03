@@ -17,11 +17,10 @@ $grid__cols: 12;
 }
 
 [class*="col-"] {
-//   outline: 1px solid #ffcc5c;
-
   display: flex;
- 
-  align-items: center;
-  justify-content: space-evenly;
 }
 
+.col-6 {
+  flex-direction: column;
+  justify-content: space-evenly;
+}

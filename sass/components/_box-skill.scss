@@ -1,0 +1,107 @@
+.box-skill {
+  cursor: default;
+  height: 4rem;
+  margin: 1rem;
+  background-color: $color-grey-dark-1;
+  transition: all 0.3s;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $color-primary-2;
+    color: $color-grey-dark-1;
+
+    
+  }
+
+
+&-1 {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20rem;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.png);
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+        z-index: 0;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    
+      &:hover::after {
+        opacity: .5;
+        left: -10rem; 
+      }
+}
+
+
+&-2 {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20rem;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://png.pngtree.com/svg/20170822/logo_css_610140.png);
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+        z-index: 0;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    
+      &:hover::after {
+        opacity: .5;
+        left: -10rem; 
+      }
+}
+
+
+
+&-3 {
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20rem;
+        width: 100%;
+        height: 100%;
+        background-image: url(http://pluspng.com/img-png/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png);
+        background-size: cover;
+        background-position: center;
+        filter: grayscale(100%);
+        z-index: 0;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+    
+      &:hover::after {
+        opacity: .5;
+        left: -5rem; 
+      }
+}
+
+
+
+  & > p {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+}
+
+
